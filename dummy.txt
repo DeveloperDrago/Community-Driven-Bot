@@ -1,3 +1,0 @@
-This is just a dummy file, so you guys can actually start forking and adding stuff to the bot
-If you want, you can add your Name and message below
-Just, don't do long paragraphs lol
