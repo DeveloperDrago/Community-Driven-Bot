@@ -7,6 +7,7 @@ class Fun(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
+
     @commands.command()
     async def yeet(self, ctx, user: discord.Member):
         await delmsg(ctx)
