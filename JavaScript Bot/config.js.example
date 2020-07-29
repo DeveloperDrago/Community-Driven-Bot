@@ -1,0 +1,5 @@
+module.exports = {
+    keys: {
+        discord_token: ""
+    }
+}
