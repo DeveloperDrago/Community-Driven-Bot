@@ -5,12 +5,13 @@ import json
 import os
 
 
-with open("./jsons/config.json") as f:
+with open("config.json") as f:
     cfg = json.load(f)
-token = cfg["token"]
+token = cfg["discord_token"]
+prefix = cfg["prefix"]
 
 
-client = commands.Bot(command_prefix="!")
+client = commands.Bot(command_prefix=prefix)
 
 
 @client.event
@@ -29,7 +30,7 @@ async def on_message(message):
     if author.bot:
         return
     elif content == client.user.mention:
-        await channel.send(f"My prefix is `!`! Type `!help` for more commands!")
+        await channel.send(f"My prefix is `{prefix}`! Type `{prefix}help` for more commands!")
 
     await client.process_commands(message)
 
